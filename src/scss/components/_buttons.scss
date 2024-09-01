@@ -1,0 +1,73 @@
+.fill-questionnaire-button {
+    color: var(--color-brand-dark);
+    border-radius: 100%;
+    border: 1px solid var(--color-brand-light);
+    background: var(--color-primary-dark);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    font-family: "Kyiv Type Titling", sans-serif;
+    font-weight: 400;
+    padding: 12px 24px;
+    width: 120px;
+    height: 120px;
+    margin-right: 32px;
+    z-index: 1;
+
+    &:hover {
+        color: var(--color-primary-dark);
+        background: var(--color-brand-light);
+    }
+}
+
+.close-modal{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    width: 32px;
+    height: 32px;
+    background-color: transparent;
+    border: 0px;
+    padding: 0;
+
+    &:focus {
+        color: var(--color-brand-light);
+    }
+
+     &__cross-arrow {
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        stroke-width: 0;
+        stroke: currentColor;
+        fill: transparent;
+    }
+}
+
+.close-menu{
+    position: absolute;
+    top: 16px;
+    right: 24px;
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    border: 0px;
+    padding: 0;
+    
+    &:focus {
+        color: var(--color-brand-light);
+    }
+
+    @media screen and (min-width:$bp-tablet) {
+        top: 16px;
+        right: 60px;
+    }
+    
+    &__cross-arrow {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        stroke-width: 0;
+        stroke: currentColor;
+        fill: transparent;
+    }
+}
