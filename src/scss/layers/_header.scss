@@ -24,6 +24,18 @@
 
         gap: 40px;
 
+        .hintToDelete
+        {
+            color: var(--color-brand-dark);
+            z-index: 3;
+            font-size: 32px;
+            margin-top: 20px ;
+
+             @media screen and (max-width:$bp-mobile) {
+                font-size: 22px;
+            }
+        }
+
         .rectangle
         {
             position: absolute;
@@ -33,9 +45,9 @@
             background: linear-gradient(to left, #ADA195, #F7ECE4); 
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 
-            @media screen and (max-width:$bp-mobile) {
-                display: none;
-            }
+            // @media screen and (max-width:$bp-mobile) {
+            //     display: none;
+            // }
         }
     }
 
