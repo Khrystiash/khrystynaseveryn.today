@@ -1,96 +1,352 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Северин ♡ Христина</title>
-    <link rel="stylesheet" href="main.scss" />
-    <script type="module" src="app.js"></script>
-  </head>
-  <body>
-    <header class="header">
-      <div class="container">
-        <div class="header__container">
-          <a href="/">
-            <img class="header__logo" src="./images/lightLogo.png" alt="Весільний логотип" />
-          </a>
-          <ul class="header__menu">
-            <li>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Северин ♡ Христина</title>
+  <link rel="stylesheet" href="main.scss" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header-rectangle"></div>
+      <a href="/">
+        <img class="header-logo" src="./images/lightLogo.png" alt="Весільний логотип" />
+      </a>
+      <button class="burger open-menu" type="button">
+        <svg class="burger__icon">
+          <use href="./images/icons.svg#icon-burger-menu"></use>
+        </svg>
+      </button>
+      <div class="mobile-menu">
+        <button class="close-menu" type="button">
+          <svg class="close-menu__cross-arrow">
+            <use href="./images/icons.svg#icon-cross"></use>
+          </svg>
+        </button>
+        <nav class="mobile-menu__nav">
+          <ul class="mobile-menu__list">
+            <li class="mobile-menu__item logo">
+              <a href="/">
+                <img class="mobile-menu__logo" src="./images/lightLogo.png" alt="Весільний логотип" />
+              </a>
+            </li>
+            <li class="mobile-menu__item" id="close-menuOurwedding">
               <a class="nav-link" href="#ourwedding-section">Наше весілля</a>
+              <ul class="mobile-menu__subitem">
+                <li class="mobile-menu__subitem" id="close-menuTiming">
+                  <a class="nav-link__subitem" href="#timing-section">Таймінг весілля</a>
+                </li>
+                <li class="mobile-menu__subitem" id="close-menuLocations">
+                  <a class="nav-link__subitem" href="#locations-section">Локації</a>
+                </li>
+                <li class="mobile-menu__subitem" id="close-menuTransfer">
+                  <a class="nav-link__subitem" href="#transfer-section">Маршрути трансферів</a>
+                </li>
+                <li class="mobile-menu__subitem" id="close-menuQuestionary">
+                  <a class="nav-link__subitem" href="#questionary-section">Анкета та кольори</a>
+                </li>
+                <li class="mobile-menu__subitem" id="close-menuDonations">
+                  <a class="nav-link__subitem" href="#donations-section">Донати</a>
+                </li>
+              </ul>
             </li>
-            <li>
-              <a class="nav-link" href="#about-section">Про нас</a>
-            </li>
-            <li>
+            <li class="mobile-menu__item" id="close-menuPhoto">
               <a class="nav-link" href="#photo-section">Фото</a>
             </li>
-            <li>
+            <li class="mobile-menu__item" id="close-menuContacts">
               <a class="nav-link" href="#contacts-section">Контакти</a>
             </li>
           </ul>
         </nav>
-        <button class="fill-questionnaire-button header__button open-modal" type="button">
-          Заповнити анкету
-        </button>
-        <div class="rectangle"></div>
-        <button class="header__burger open-menu" type="button">
-          <svg class="header__burger__icon">
-            <use href="./images/icons.svg#icon-burger-menu"></use>
-          </svg>
-        </button>
-        <div class="mobile-menu">
-          <button class="close-menu" type="button">
-            <svg class="close-menu__cross-arrow">
-              <use href="./images/icons.svg#icon-cross"></use>
-            </svg>
-          </button>
-          <nav class="mobile-menu__nav">
-            <ul class="mobile-menu__list">
-              <li class="mobile-menu__item logo">
-                <a href="/">
-                  <img class="mobile-menu__logo" src="./images/lightLogo.png" alt="Весільний логотип" />
-                </a>
-              </li>
-              <li class="mobile-menu__item" id="close-menuOurwedding">
-                <a class="nav-link" href="#ourwedding-section">Наше весілля</a>
-              </li>
-              <li class="mobile-menu__item" id="close-menuAbout">
-                <a class="nav-link" href="#about-section">Про нас</a>
-              </li>
-              <li class="mobile-menu__item" id="close-menuPhoto">
-                <a class="nav-link" href="#photo-section">Фото</a>
-              </li>
-              <li class="mobile-menu__item" id="close-menuContacts">
-                <a class="nav-link" href="#contacts-section">Контакти</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        </div>
-      </div> 
-    </header>
-    <main>
-      <section class="hero-section" id="main-section">
-        <div class="container">
-          <h1 class="hero-section__title">
-            <p class="text-brand Severyn">Северин </p>
-            <a class="pu33le" href="/">
+      </div>
+    </div>
+    </div>
+  </header>
+  <main>
+    <section class="hero-section" id="main-section">
+      <div class="rectangleCover"></div>
+      <div class="container">
+        <div class="container__title">
+          <h1 class="names">
+            <span class="text-brand Severyn">Северин</span>
+            <span class="pu33le">
               <img class="pu33leImg" src="./images/pu33le.png" alt="Пузлики" />
-            </a>
-            <p class="text-brand-dark Khrystyna">Христина</p>
+            </span>
+            <span class="text-brand-dark Khrystyna">Христина</span>
           </h1>
-          <div class="rectangle1"></div>
-          <div class="rectangle2"></div>
-          <div class="rectangle3"></div>
-          <a href="/">
-            <img class="hero-section__photo" src="./images/frontPhoto.png" alt="Спільне фото" />
-          </a>
-          <button class="fill-questionnaire-button hero-section__button" id="open-modal-hero" type="button">
-            Заповнити анкету
-          </button>
         </div>
-      </section>
-    </main>
-      <script src="./js/mobile-menu.js"></script>
-  </body>
+        <div class="container__content">
+          <div class="rectangle1">
+            <div class="rectangle2">
+              <span>
+                <img class="branchImg" src="./images/branch.png" alt="Гілочка" />
+              </span>
+            </div>
+            <div class="rectangle3">
+              <span class="hero-section__photo">
+                <img class="hero-section__photo__img" src="./images/frontPhoto.png" alt="Спільне фото" />
+              </span>
+            </div>
+          </div>
+          <div class="content-button">
+            <button class="fill-questionnaire-button hero-section__button" id="open-modal-hero" type="button">
+              Заповнити анкету
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="ourWedding-section" id="ourwedding-section">
+      <div class="ourWedding-section__container">
+        <div class="title-rectangle">
+          <span class="title-text">Наше весілля</span>
+        </div>
+        <div class="ourWedding-section__content">
+          <div class="rectangle1">
+            <div class="rectangle2">
+              <span class="branch">
+                <img class="branchImg" src="./images/roundBranch.png" alt="Гілочка" />
+              </span>
+            </div>
+            <div class="rectangle3">
+              <div class="content-text">
+                <span class="month uppercase">вересень</span>
+                <div class="concrete-date">
+                  <span class="weekDay uppercase">неділя</span>
+                  <span class="date">29
+                  </span>
+                  <span class="time">12:15 год</span>
+                </div>
+                <span class="year">2024</span>
+                <span class="place uppercase">домініканський собор</span>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <section class="timing-section" id="timing-section">
+      <div class="timing-section__container">
+        <div class="title">
+          <span class="title__line">
+            <img class="line" src="./images/titleLineBackground.png" alt="Фон заголовку" />
+          </span>
+          <span class="title__text">Таймінг весілля</span>
+        </div>
+        <div class="container-content">
+          <div class="content-icons">
+            <span class="church">
+              <img class="churchImg icon" src="./images/church.png" alt="Церква" />
+            </span>
+            <span class="bus">
+              <img class="busImg icon" src="./images/bus.png" alt="Автобус" />
+            </span>
+            <span class="ceremony">
+              <img class="ceremonyImg icon" src="./images/ceremony.png" alt="Церемонія" />
+            </span>
+            <span class="dance">
+              <img class="danceImg icon" src="./images/dance.png" alt="Танець" />
+            </span>
+            <span class="cake">
+              <img class="cakeImg icon" src="./images/cake.png" alt="Торт" />
+            </span>
+            <span class="traditions">
+              <img class="traditionsImg icon" src="./images/traditions.png" alt="Традиції" />
+            </span>
+            <span class="busBack">
+              <img class="busImg back icon" src="./images/bus.png" alt="Автобус" />
+            </span>
+          </div>
+          <div class="content-points">
+            <div class="wrapper-point">
+              <div class="point">
+                <div class="point__inner"></div>
+              </div>
+            </div>
+            <div class="wrapper-point">
+              <div class="point">
+                <div class="point__inner"></div>
+              </div>
+            </div>
+            <div class="wrapper-point">
+              <div class="point">
+                <div class="point__inner"></div>
+              </div>
+            </div>
+            <div class="wrapper-point">
+              <div class="point">
+                <div class="point__inner"></div>
+              </div>
+            </div>
+            <div class="wrapper-point">
+              <div class="point">
+                <div class="point__inner"></div>
+              </div>
+            </div>
+            <div class="wrapper-point">
+              <div class="point">
+                <div class="point__inner"></div>
+              </div>
+            </div>
+            <div class="wrapper-point">
+              <div class="point">
+                <div class="point__inner"></div>
+              </div>
+            </div>
+          </div>
+          <div class="content-allText">
+            <div class="content-text time">
+              <div class="church-text time">
+                <span class="time__church-text">12:15 -</span>
+              </div>
+              <div class="bus-text time">
+                <span class="time__bus-text">13:15 -</span>
+              </div>
+              <div class="ceremony-text time">
+                <span class="time__ceremony-text">14:30 -</span>
+              </div>
+              <div class="dance-text time">
+                <span class="time__dance-text">17:00 -</span>
+              </div>
+              <div class="cake-text time">
+                <span class="time__cake-text">20:15 -</span>
+              </div>
+              <div class="traditions-text time">
+                <span class="time__traditions-text">20:45 - </span>
+              </div>
+              <div class="busBack-text time">
+                <span class="time__busBack-text">22:30 - </span>
+              </div>
+            </div>
+            <div class="content-text">
+              <div class="church-text content">
+                <span class="church-text__content">Таїнство Вінчання у Домініканському Соборі</span>
+              </div>
+              <div class="bus-text content">
+                <span class="bus-text__content">Трансфер гостей до місця святкування (від Домініканського Собору)</span>
+              </div>
+              <div class="ceremony-text content">
+                <span class="ceremony-text__content">Церемонія з обітницями</span>
+              </div>
+              <div class="dance-text content">
+                <span class="dance-text__content">Перший танець</span>
+              </div>
+              <div class="cake-text content">
+                <span class="cake-text__content">Розрізання весільного торта</span>
+              </div>
+              <div class="traditions-text content">
+                <span class="traditions-text__content">Весільні традиції</span>
+              </div>
+              <div class="busBack-text content">
+                <span class="busBack-text__content">Трансфер гостей додому</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="devidingLines">
+        <div class="first-devidingLine">
+          <span>. _ . _ . _ . _ . _ . _ . _ .</span>
+        </div>
+        <div class="second-devidingLine">
+        </div>
+        <div class="third-devidingLine">
+          <span>. _ . _ . _ . _ . _ .</span>
+        </div>
+      </div>
+    </section>
+    <section class="locations-section" id="locations-section">
+      <div class="locations-section__container">
+        <div class="title">
+          <span class="title__line">
+            <img class="line" src="./images/titleLineBackground.png" alt="Фон заголовку" />
+          </span>
+          <span class="title__text">Локації</span>
+        </div>
+        <div class="container-content">
+          <iframe class="church-map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3059.797049422005!2d24.033006490445445!3d49.84297667494665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add059b7b3cf1%3A0x97bdfa1e04fc9cc!2z0KbQtcyB0YDQutCy0LAg0J_RgNC10YHQstGP0YLQvsyB0Zcg0ITQstGF0LDRgNC4zIHRgdGC0ZbRlw!5e0!3m2!1suk!2sua!4v1725700717523!5m2!1suk!2sua"
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <span class="content-text uppercase">Місце проведення Таїнства Вінчання Домініканський Собор</span>
+          <iframe class="restaurant-map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2620.9153539770878!2d23.99619081965146!3d49.651697883232714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473af16f9f917a0b%3A0xf58cc35d57bc4d62!2z0KHQsNC0IC8gR2FyZGVuIC0g0J_RgNC-0YHRgtGW0YAg0LTQu9GPINCS0LDRiNC40YUg0L_QvtC00ZbQuQ!5e1!3m2!1suk!2sua!4v1725701072685!5m2!1suk!2sua"
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <span class="content-text uppercase">Місце проведення весілля Garden Prostir</span>
+        </div>
+      </div>
+      <div class="devidingLines">
+        <div class="first-devidingLine">
+          <span>. _ . _ . _ . _ . _ . _ . _ .</span>
+        </div>
+        <div class="second-devidingLine">
+        </div>
+        <div class="third-devidingLine">
+          <span>. _ . _ . _ . _ . _ .</span>
+        </div>
+      </div>
+    </section>
+    <section class="transfer-section" id="transfer-section">
+      <div class="transfer-section__container">
+        <div class="title">
+          <span class="title__line">
+            <img class="line" src="./images/titleLineBackground.png" alt="Фон заголовку" />
+          </span>
+          <span class="title__text">Маршрути трансферів</span>
+        </div>
+        <div class="container-content">
+          <div class="start-point">
+            <span class="start-point__icon">
+              <img class="start-point__iconImg" src="./images/startPoint.png" alt="Початок маршруту" />
+            </span>
+            <span class="start-point__text">Garden Prostir</span>
+          </div>
+          <div class="stop-points">
+            <div class="stop-points__icons">
+              <span class="stop-point__icon">
+                <img class="stop-point__iconImg" src="./images/busStop.png" alt="Зупинка" />
+              </span>
+              <!-- <span class="stop-point__icon">
+                <img class="stop-point__iconImg" src="./images/busStop.png" alt="Зупинка" />
+              </span>
+              <span class="stop-point__icon">
+                <img class="stop-point__iconImg" src="./images/busStop.png" alt="Зупинка" />
+              </span>
+              <span class="stop-point__icon">
+                <img class="stop-point__iconImg" src="./images/busStop.png" alt="Зупинка" />
+              </span>
+              <span class="stop-point__icon">
+                <img class="stop-point__iconImg" src="./images/busStop.png" alt="Зупинка" />
+              </span>
+              <span class="stop-point__icon">
+                <img class="stop-point__iconImg" src="./images/busStop.png" alt="Зупинка" />
+              </span>
+              <span class="stop-point__icon">
+                <img class="stop-point__iconImg" src="./images/busStop.png" alt="Зупинка" />
+              </span> -->
+            </div>
+            <div class="stop-points__text">
+              <span class="temproraryText">Детальна інформація буде додана згодом...</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="devidingLines">
+        <div class="first-devidingLine">
+          <span>. _ . _ . _ . _ . _ . _ . _ .</span>
+        </div>
+        <div class="second-devidingLine">
+        </div>
+        <div class="third-devidingLine">
+          <span>. _ . _ . _ . _ . _ .</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  </div>
+  <script src="./js/mobile-menu.js"></script>
+</body>
+
 </html>

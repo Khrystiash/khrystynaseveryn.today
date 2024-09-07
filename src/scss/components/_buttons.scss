@@ -6,8 +6,9 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     cursor: pointer;
     font-family: "Kyiv Type Titling", sans-serif;
-    font-weight: 400;
-    padding: 12px 24px;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 12px 12px;
     width: 120px;
     height: 120px;
     margin-right: 32px;
@@ -19,31 +20,7 @@
     }
 }
 
-.close-modal{
-    position: absolute;
-    top: 40px;
-    right: 40px;
-    width: 32px;
-    height: 32px;
-    background-color: transparent;
-    border: 0px;
-    padding: 0;
-
-    &:focus {
-        color: var(--color-brand-light);
-    }
-
-     &__cross-arrow {
-        display: inline-block;
-        width: 32px;
-        height: 32px;
-        stroke-width: 0;
-        stroke: currentColor;
-        fill: transparent;
-    }
-}
-
-.close-menu{
+.close-menu {
     position: absolute;
     top: 16px;
     right: 24px;
@@ -52,16 +29,12 @@
     background-color: transparent;
     border: 0px;
     padding: 0;
-    
+    color: var(--color-brand-dark);
+
     &:focus {
-        color: var(--color-brand-light);
+        color: var(--color-primary-dark);
     }
 
-    @media screen and (min-width:$bp-tablet) {
-        top: 16px;
-        right: 60px;
-    }
-    
     &__cross-arrow {
         display: inline-block;
         width: 24px;

@@ -1,0 +1,177 @@
+.transfer-section {
+    position: relative;
+    background-color: #F7ECE4;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    z-index: -2;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: url('./images/backgroundOurWeddingUpSideDown.jpg');
+        background-size: cover;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        opacity: 0.2;
+        z-index: -1;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+
+        .title {
+            position: relative;
+            display: flex;
+            justify-content: space-evenly;
+            text-align: center;
+
+            &__line {
+                width: 377px;
+                height: 67px;
+            }
+
+            &__text {
+                position: absolute;
+                font-family: "Kyiv Type Titling Medium3", sans-serif;
+                font-size: 24px;
+                font-weight: 400;
+                line-height: 1;
+                color: var(--color-brand-dark);
+                padding: 15px;
+            }
+
+        }
+
+        .container-content {
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+
+            .start-point {
+                display: flex;
+                margin: 20px;
+                gap: 20px;
+
+                &__icon {
+                    width: 47px;
+                    height: 42px;
+                }
+
+                &__text {
+                    font-family: "Kyiv Type Titling Medium3", sans-serif;
+                    font-size: 24px;
+                    font-weight: 400;
+                    color: var(--color-brand-dark);
+                }
+            }
+
+            .stop-points {
+                display: flex;
+                justify-content: center;
+                padding-left: 30px;
+                padding-top: 20px;
+                gap: 20px;
+
+                &__icons {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+
+                    .stop-point__iconImg {
+                        width: 38px;
+                        height: 59px;
+                    }
+                }
+
+                &__text {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    gap: 20px;
+
+                    .temproraryText {
+                        font-family: "Kyiv Type Titling Medium3", sans-serif;
+                        font-size: 14px;
+                        font-weight: 400;
+                        color: var(--color-brand-dark);
+                    }
+                }
+            }
+        }
+    }
+
+    .devidingLines {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .first-devidingLine {
+            position: absolute;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            font-size: 24px;
+            width: 100%;
+            color: var(--color-primary-dark);
+            line-height: 0;
+        }
+
+        .second-devidingLine {
+            margin: 15px 0;
+            border: 2px solid var(--color-primary-dark);
+        }
+
+        .third-devidingLine {
+            position: absolute;
+            padding: 15px 0;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            font-size: 36px;
+            width: 100%;
+            color: var(--color-primary-dark);
+            line-height: 0;
+        }
+    }
+
+    .devidingLines {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .first-devidingLine {
+            position: absolute;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            font-size: 24px;
+            width: 100%;
+            color: var(--color-primary-dark);
+            line-height: 0;
+        }
+
+        .second-devidingLine {
+            margin: 15px 0;
+            border: 2px solid var(--color-primary-dark);
+        }
+
+        .third-devidingLine {
+            position: absolute;
+            padding: 15px 0;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            font-size: 36px;
+            width: 100%;
+            color: var(--color-primary-dark);
+            line-height: 0;
+        }
+    }
+}
