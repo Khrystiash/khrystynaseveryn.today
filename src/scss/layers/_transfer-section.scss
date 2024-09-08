@@ -109,41 +109,6 @@
         }
     }
 
-    .devidingLines {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-
-        .first-devidingLine {
-            position: absolute;
-            display: flex;
-            justify-content: flex-end;
-            align-items: flex-end;
-            font-size: 24px;
-            width: 100%;
-            color: var(--color-primary-dark);
-            line-height: 0;
-        }
-
-        .second-devidingLine {
-            margin: 15px 0;
-            border: 2px solid var(--color-primary-dark);
-        }
-
-        .third-devidingLine {
-            position: absolute;
-            padding: 15px 0;
-            display: flex;
-            justify-content: flex-start;
-            align-items: flex-start;
-            font-size: 36px;
-            width: 100%;
-            color: var(--color-primary-dark);
-            line-height: 0;
-        }
-    }
-
     .dividingLines {
         position: relative;
         display: flex;

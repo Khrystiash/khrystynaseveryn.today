@@ -1,0 +1,81 @@
+.photo-section {
+    position: relative;
+    background-color: #F7ECE4;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('./images/backgroundOurWeddingUpSideDown.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 0.2;
+    }
+
+    >* {
+        position: relative;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+
+        .title-rectangle {
+            text-align: right;
+            align-self: center;
+            width: 100%;
+            height: 80px;
+            background: linear-gradient(to left, rgba(247, 236, 228, 1) 0%,
+                    rgba(99, 106, 96, 0.8) 100%);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+
+
+            .title-text {
+                font-family: "Kyiv Type Titling", sans-serif;
+                font-size: 36px;
+                font-weight: 400;
+                line-height: 1;
+                color: var(--color-brand-dark);
+                padding: 10px;
+            }
+        }
+    }
+
+    &__content {
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+
+        .photo-section-text {
+            font-family: "Kyiv Type Titling", sans-serif;
+            font-size: 20px;
+            font-weight: 400;
+            color: var(--color-brand-dark);
+            width: 456px;
+
+            @media screen and (max-width: $bp-mobile) {
+                width: 256px;
+            }
+        }
+
+        .photo-section-arrow {
+            align-self: flex-start;
+
+            &.rotated {
+                align-self: flex-end;
+                transform: scaleX(-1);
+                transform: rotate(180deg);
+            }
+        }
+    }
+}

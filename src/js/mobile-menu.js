@@ -7,9 +7,8 @@ const menuBtnCloseLocations = document.getElementById('close-menuLocations');
 const menuBtnCloseTransfer = document.getElementById('close-menuTransfer');
 const menuBtnCloseQuestionary = document.getElementById('close-menuQuestionary');
 const menuBtnCloseDonations = document.getElementById('close-menuDonations');
-const menuBtnCloseAbout = document.getElementById('close-menuAbout');
 const menuBtnClosePhoto = document.getElementById('close-menuPhoto');
-const menuBtnCloseContacts = document.getElementById('close-menuContacts');
+// const menuBtnCloseContacts = document.getElementById('close-menuContacts');
 
 const toggleMenu = () => {
     return mobileMenu.classList.toggle('is-open');
@@ -31,6 +30,5 @@ menuBtnCloseLocations.addEventListener('click', closeMenu);
 menuBtnCloseTransfer.addEventListener('click', closeMenu);
 menuBtnCloseQuestionary.addEventListener('click', closeMenu);
 menuBtnCloseDonations.addEventListener('click', closeMenu);
-menuBtnCloseAbout.addEventListener('click', closeMenu);
 menuBtnClosePhoto.addEventListener('click', closeMenu);
-menuBtnCloseContacts.addEventListener('click', closeMenu);
+// menuBtnCloseContacts.addEventListener('click', closeMenu);
