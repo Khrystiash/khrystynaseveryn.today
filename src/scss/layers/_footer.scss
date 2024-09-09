@@ -1,0 +1,122 @@
+.footer {
+    padding: 24px 0;
+    position: relative;
+    color: var(--color-brand-dark);
+    background-image: url('./images/footer-background.jpg');
+    background-color: var(--color-primary-dark);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    @media screen and (min-width:$bp-tablet) {
+        padding: 32px 0;
+    }
+
+    &::before,
+    &::after {
+        position: absolute;
+        background-repeat: no-repeat;
+        bottom: 0;
+        content: '';
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        align-items: center;
+        gap: 20px;
+    }
+
+    &__navigation {
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 40px 40px;
+        gap: 150px;
+
+        @media screen and (max-width: $bp-mobile) {
+            margin: 20px 20px;
+            gap: 10px;
+        }
+
+        &__logo {
+            flex-grow: 1;
+            flex-shrink: 0;
+            width: 270px;
+            height: 270px;
+            align-self: center;
+
+            @media screen and (max-width: $bp-mobile) {
+                width: 170px;
+                height: 170px;
+            }
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        white-space: nowrap;
+
+        @media screen and (max-width: $bp-mobile) {
+            line-height: 0.5;
+        }
+
+        .nav-link {
+            color: var(--color-brand-light);
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 400;
+
+            &.main {
+                font-size: 24px;
+                font-weight: 600;
+                margin: 20px 0;
+            }
+
+            &:hover {
+                color: var(--color-primary-dark);
+            }
+        }
+    }
+
+    &__links {
+        display: flex;
+        align-self: center;
+        margin: 0 50px;
+        padding-bottom: 16px;
+
+        .bride,
+        .groom {
+            color: var(--color-brand-light);
+            font-size: 16px;
+            font-weight: 400;
+            font-style: normal;
+            text-decoration: none;
+        }
+
+        .contact-link,
+        .social-media__item {
+            color: var(--color-brand-light);
+            font-size: 16px;
+            font-weight: 400;
+            font-style: normal;
+            text-decoration: none;
+
+            &:hover {
+                color: var(--color-primary-dark);
+            }
+        }
+
+        .social-media__item {
+            display: flex;
+            justify-content: center;
+
+            .social-media__icon {
+                width: 50px;
+                height: 50px;
+                align-self: center;
+            }
+        }
+    }
+}

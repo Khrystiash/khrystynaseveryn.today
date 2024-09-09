@@ -66,16 +66,31 @@
             @media screen and (max-width: $bp-mobile) {
                 width: 256px;
             }
-        }
 
-        .photo-section-arrow {
-            align-self: flex-start;
-
-            &.rotated {
-                align-self: flex-end;
-                transform: scaleX(-1);
-                transform: rotate(180deg);
+            &.additional {
+                font-size: 14px;
             }
         }
+
+        .photo-folder-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 30px;
+            width: 236px;
+            ;
+
+            .photo-section-arrow {
+                align-self: flex-start;
+
+                &.rotated {
+                    align-self: flex-end;
+                    transform: scaleX(-1);
+                    transform: rotate(180deg);
+                }
+            }
+        }
+
     }
 }
