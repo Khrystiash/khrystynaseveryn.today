@@ -71,38 +71,61 @@
                     font-size: 24px;
                     font-weight: 400;
                     color: var(--color-brand-dark);
+
+                    @media screen and (max-width: $bp-mobile) {
+                        font-size: 20px;
+                    }
                 }
             }
 
             .stop-points {
+                position: relative;
                 display: flex;
-                justify-content: center;
-                padding-left: 30px;
-                padding-top: 20px;
-                gap: 20px;
+                padding-top: 10px;
+                margin-bottom: 20px;
 
                 &__icons {
                     display: flex;
                     flex-direction: column;
-                    gap: 20px;
 
-                    .stop-point__iconImg {
-                        width: 38px;
-                        height: 59px;
+                    .stop-point__icon {
+                        margin: 10px 5px;
+                        width: 48px;
+                        height: 69px;
+
+                        @media screen and (max-width:$bp-mobile) {
+                            width: 38px;
+                            height: 59px;
+                        }
                     }
                 }
 
                 &__text {
                     display: flex;
                     flex-direction: column;
-                    justify-content: space-evenly;
-                    gap: 20px;
+                    font-family: "Kyiv Type Titling Medium3", sans-serif;
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: var(--color-brand-dark);
 
-                    .temproraryText {
-                        font-family: "Kyiv Type Titling Medium3", sans-serif;
+                    @media screen and (max-width: $bp-mobile) {
                         font-size: 14px;
-                        font-weight: 400;
-                        color: var(--color-brand-dark);
+                    }
+
+                    .stop-point__text {
+                        margin: 5px 15px;
+                        height: 79px;
+                        line-height: 69px;
+
+                        @media screen and (max-width:$bp-mobile) {
+                            height: 69px;
+                            line-height: 59px;
+
+                            &.zero {
+                                padding-top: 20px;
+                                line-height: 1;
+                            }
+                        }
                     }
                 }
             }
